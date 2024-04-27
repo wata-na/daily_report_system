@@ -91,4 +91,15 @@ public class AuthAction extends ActionBase {
             forward(ForwardConst.FW_LOGIN);
         }
     }
+    public void logout() throws ServletException, IOException {
+
+        
+
+        //セッションにログアウト時のフラッシュメッセージを追加
+        putSessionScope(AttributeConst.FLUSH, MessageConst.I_LOGOUT.getMessage());
+
+        //ログイン画面にリダイレクト
+        redirect(ForwardConst.ACT_AUTH, ForwardConst.CMD_SHOW_LOGIN);
+
+    }
 }
