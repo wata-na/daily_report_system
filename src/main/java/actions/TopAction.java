@@ -1,16 +1,16 @@
 package actions;
 
 import java.io.IOException;
-import java.util.List; //追記
+import java.util.List;
 
 import javax.servlet.ServletException;
 
-import actions.views.EmployeeView; //追記
-import actions.views.ReportView; //追記
+import actions.views.EmployeeView;
+import actions.views.ReportView;
 import constants.AttributeConst;
 import constants.ForwardConst;
-import constants.JpaConst;  //追記
-import services.ReportService;  //追記
+import constants.JpaConst;
+import services.ReportService;  
 /**
  * トップページに関する処理を行うActionクラス
  *
