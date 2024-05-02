@@ -93,7 +93,7 @@ public class AuthAction extends ActionBase {
     }
     public void logout() throws ServletException, IOException {
 
-        
+        removeSessionScope(AttributeConst.LOGIN_EMP);
 
         //セッションにログアウト時のフラッシュメッセージを追加
         putSessionScope(AttributeConst.FLUSH, MessageConst.I_LOGOUT.getMessage());
